@@ -3,12 +3,13 @@ import "./Form.css"
 
 const Form = ({ getSearch, search, updateSearch }) => {
     return (
-        <div>
+        <div className="form-container">
+            <h3>Look up recepies by ingredients, get inspired..</h3>
             <form onSubmit={getSearch} className="search-form">
-                <input className="search-bar" type="text" value={search} onChange={updateSearch}></input>
+                <input className="search-bar" type="text" value={search} onChange={updateSearch} placeholder="write your ingredient here.."></input>
                 <button className="search-button" type="submit">
                     Search
-          </button>
+                </button>
 
             </form>
         </div>

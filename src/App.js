@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import './App.css';
 import Recipe from "./Components/Recipe/Recipe";
 import Form from "./Components/Form/Form";
+import ResultBar from "./Components/ResultBar/ResultBar";
+import Header from "./Components/Header/Header";
 
 const App = () => {
 
@@ -10,7 +12,7 @@ const App = () => {
 
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState('');
-  const [query, setQuery] = useState('chicken');
+  const [query, setQuery] = useState('pasta');
 
   useEffect(() => {
     getRecipes();
@@ -21,6 +23,7 @@ const App = () => {
     const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`)
     //we wait the response fetched and then we get the data
     const data = await response.json();
+    setRecipes([]);
     setRecipes(data.hits);
     console.log(data.hits);
   };
@@ -37,11 +40,15 @@ const App = () => {
 
   return (
     <div className="App">
+      <Header/>
+      
       <Form
         getSearch={getSearch}
         search={search}
         updateSearch={updateSearch}
       />
+      <ResultBar 
+        search = {query}/>
       <div className="recipes-container">
         {recipes.map(recipe => (
           <Recipe

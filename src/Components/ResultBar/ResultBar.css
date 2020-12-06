@@ -1,0 +1,15 @@
+.result {
+    text-align: center;
+    font-size: 1.5em;
+    margin: auto;
+    padding: 2% 0;
+}
+
+.result h3 {
+    display: inline;
+}
+
+.result > span {
+    padding-left: 0.5%;
+    color: #787171;
+}

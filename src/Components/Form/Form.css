@@ -1,6 +1,10 @@
+.form-container > h3 {
+    text-align: center;
+}
+
 .search-form {
     min-height: 10vh;
-    padding: 2%;
+    padding: 2% auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +17,7 @@
 }
 
 .search-button {
-    background-color: lightcoral;
+    background-color:rgb(199 106 106);
     border: none;
     padding: 10px 20px;
     color: white;
