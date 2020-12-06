@@ -3,7 +3,7 @@
     box-shadow: 0px 5px 20px rgb(71,71,71);
     margin: 20px;
     background: white;
-    width: 80%;
+    width: 65%;
     padding: 1rem 1rem 2rem 2.5rem;
 }
 
@@ -16,7 +16,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
 }
 
 .ingredients div h3 {
@@ -26,7 +25,7 @@
 .ingredients div p {
     margin-top: 2%;
     border-radius: 10%;
-    padding: 1px 5px;
+    padding: 0 5px;
     background-color: rgb(139 199 106);
     width: fit-content;
     font-variant-caps: all-small-caps;
@@ -35,4 +34,22 @@
 .ingredients div li {
     padding: 2px;
     list-style: outside;
+}
+
+@media (max-width: 1140px){
+    .recipe-wrapper {
+        width: 80%;
+    }
+}
+
+@media (max-width: 920px){
+    .ingredients {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    .ingredients img {
+        max-width: fit-content;
+        margin: auto;
+    }
 }

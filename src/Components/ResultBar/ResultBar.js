@@ -5,7 +5,7 @@ import "./ResultBar.css"
 const ResultBar = ({search}) => {
     return (
         <div className = "result">
-            <h3>Results for</h3>
+            <h3>Results for: </h3>
             <span>{search}</span>
         </div>
     );
