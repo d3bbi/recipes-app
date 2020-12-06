@@ -1,11 +1,17 @@
 .App {
   min-height: 100vh;
-  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+
 }
 
 .recipes-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+h3 {
+  font-family: 'Arapey', serif;
+  word-spacing: 3px;
+  color: rgb(174 136 136);
 }
 

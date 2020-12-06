@@ -1,11 +1,38 @@
-.recipe-container {
+.recipe-wrapper {
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgb(71,71,71);
     margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     background: white;
+    width: 80%;
+    padding: 1rem 1rem 2rem 2.5rem;
+}
+
+.recipe-wrapper > h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    min-width: 40%;
+}
+
+.ingredients div h3 {
+    padding-bottom: 3%;
+}
+
+.ingredients div p {
+    margin-top: 2%;
+    border-radius: 10%;
+    padding: 1px 5px;
+    background-color: rgb(139 199 106);
+    width: fit-content;
+    font-variant-caps: all-small-caps;
+}
+
+.ingredients div li {
+    padding: 2px;
+    list-style: outside;
 }
