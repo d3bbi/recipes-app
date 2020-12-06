@@ -22,6 +22,10 @@
     padding-bottom: 3%;
 }
 
+.ingredients img {
+  height: max-content;
+}
+
 .ingredients div p {
     margin-top: 2%;
     border-radius: 10%;
